@@ -12,13 +12,13 @@ int playerHeight = 36;
 int playerWidth = 40;
 float playerX = 100;
 float playerY = 400;
-float gravity = 2;
-int jumpHeight = 100;
+float gravity = 3;
+int jumpHeight = 125;
 
 float rightAnimate = 0;
 float leftAnimate = 0;
 
-float gameSpeed = 4;
+float gameSpeed = 5;
 float cloudSpeed = gameSpeed / 8;
 
 void drawDino(float x, float y){
@@ -101,9 +101,9 @@ void drawDino(float x, float y){
 
 void restartGame(){
   
-  gameSpeed = 4;
-  gravity = 2;
-  jumpHeight = 80;
+  gameSpeed = 5;
+  gravity = 3;
+  jumpHeight = 125;
   score = 0;
   cact1.resetCoords();
   
